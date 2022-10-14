@@ -10,7 +10,7 @@
 
 header{
     list-style: none;
-    background-color: #D90404;
+    background-color: #c4170c;
     position: fixed;
     top: 0;
     left: 0;
@@ -46,6 +46,21 @@ nav{
 }
 
 #menu li a:hover{
-    background-color: #ffffff;
-    color: #D90404;
+    color: #420000;
+    transition: 0.5s;
 }
+
+main{
+    margin-top: 150px;
+    width: 1250px;
+}
+
+#principal-1{
+    display: grid;
+}
+
+.principal-1 img {
+    width: 650px;
+}
+
+
