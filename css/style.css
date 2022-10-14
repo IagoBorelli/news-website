@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Silkscreen&display=swap');
 
+
 *{
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
 
 header{
     list-style: none;
@@ -64,3 +66,110 @@ main{
 }
 
 
+
+/* estilização página de artigos */
+
+p{
+    text-align: justify;
+    text-indent: 15px;
+}
+
+#artigo-title{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 2em;
+    padding-bottom: .5em;
+}
+
+#article-informations{
+    display: flex;
+    justify-content: center;
+    font-size: .9em;
+    padding-bottom: 1em;
+    color: darkgray;
+}
+#article-informations a{
+    color: darkgray;
+    text-decoration: none;
+}
+#article-informations a:hover{
+    border-bottom: 1px solid red;
+}
+
+#article-image{
+    text-align: center;
+}
+#article-text{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    line-height: 1.8em;
+}
+
+#comments{
+    background: rgba(239, 239, 240, .7);
+    padding: 1.5em;
+}
+
+#comment-input{
+    display: flex;
+}
+
+#comment-input input{
+    width: 90%;
+    height: 60px;
+    border: 2px solid darkgray;
+
+}
+
+#comment-input button{
+    width: 10%;
+    border: none;
+    margin-left: 2em;
+}
+
+#comment-input button:active{
+    background-color: white;
+}
+
+#user-comment{
+    padding-top: 2em;
+}
+
+#user-comment div{
+    display: flex;
+    padding-right: 2em;
+    margin-bottom: 1.5em;
+    align-items: center;
+}
+#user-comment div p{
+    padding-left: 2em;
+    align-content: center;
+    font-size: .9em;
+    justify-items: center;
+}
+
+/*Estilização do Footer*/
+
+footer{
+    background-color: #c4170c;
+    border-top: 3px solid #0477BF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin-top: 30px;
+}
+
+footer h1{
+    font-family: 'silkscreen', sans-serif;
+    color: white;
+    font-size: 3em;
+}
+
+#logo-footer{
+}
+
+#icones-redes-sociais a{
+    margin-right: 20px;
+    text-decoration: none;
+}
