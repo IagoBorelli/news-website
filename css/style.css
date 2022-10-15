@@ -156,7 +156,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 15vh;
     margin-top: 30px;
 }
 
@@ -166,8 +166,6 @@ footer h1{
     font-size: 3em;
 }
 
-#logo-footer{
-}
 
 #icones-redes-sociais a{
     margin-right: 20px;
