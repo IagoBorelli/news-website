@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Silkscreen
+- Font Author: Copyright 2001 The Silkscreen Project Authors (https://github.com/googlefonts/silkscreen)
+- Font Source: http://fonts.gstatic.com/s/silkscreen/v1/m8JXjfVPf62XiF7kO-i9ULRvamODxdI.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
