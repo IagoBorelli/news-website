@@ -1,21 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Nerd News</title>
+    <link rel="stylesheet" href="css/formulario.css">
+    <script src="https://kit.fontawesome.com/ca14b9e588.js" crossorigin="anonymous"></script>
+    <title>Cadastro</title>
 </head>
 <body>
-    <div>
-        <img src="" alt="">
+    <header id="menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cinema.html">Cinema</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="tech.html">Tech</a></li>
+                <li><a href="comics.html">Quadrinhos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Quem Somos</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>  
+    <div id="form">
         <form action="">
-            <input placeholder="Nome completo" type="text" name="" id="">
-            <input type="email" name="" id="">
-            <input type="password" name="" id="">
-            <input placeholder="Confirmar senha" type="password" name="" id="">
-            <button></button>
+            <h2 class="title">Cadastro</h2>
+
+            <label for="username">Nome</label>
+            <div class="input">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <input type="text" name="username" id="username" required>
+            </div>
+
+            <label for="email">E-mail</label>
+            <div class="input">
+                <i class="far fa-envelope"></i>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <label for="password">Senha</label>
+            <div class="input">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <label for="confirm">Confirmar Senha</label>
+            <div class="input">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="confirm" id="confirm" required>
+            </div>
+
+            <div id="btn">
+                <button type="submit">Cadastrar</button>
+            </div>
         </form>
+
     </div>
 </body>
 </html>

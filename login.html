@@ -1,18 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Nerd News</title>
+    <link rel="stylesheet" href="css/formulario.css">
+    <script src="https://kit.fontawesome.com/ca14b9e588.js" crossorigin="anonymous"></script>
+    <title>Login</title>
 </head>
 <body>
-    <div>
-        <img src="" alt="">
-        <input type="email" name="" id="">
-        <input type="password" name="" id="">
-        <a href="#"><button></button></a>
-        <a href="#">Cadastre-se</a>
+    <header id="menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cinema.html">Cinema</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="tech.html">Tech</a></li>
+                <li><a href="comics.html">Quadrinhos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Quem Somos</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>  
+    <div id="form">
+        <form action="">
+            <h2 class="title">Login</h2>
+
+            <label for="username">Nome</label>
+            <div class="input">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <input type="text" name="username" id="username" required>
+            </div>
+
+            <label for="email">E-mail</label>
+            <div class="input">
+                <i class="far fa-envelope"></i>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <label for="password">Senha</label>
+            <div class="input">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" id="password" required>
+            </div>
+
+            <div id="btn">
+                <button type="submit">Entrar</button>
+            </div>
+            <a href="cadastro.html" id="ancora">Cadastre-se</a>
+        </form>
+
     </div>
 </body>
 </html>
