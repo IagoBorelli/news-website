@@ -16,6 +16,8 @@
 #noticia2{
     
     height: 100;
+    grid-column-start: 2;
+    grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
     margin: 20px 10px;
@@ -30,7 +32,7 @@
     height: 100;
     grid-row-start: 3;
     grid-row-end: 4;
-    margin: 50px 50px;
+    margin: 120px 50px;
 }
 
 #noticia3 img{
@@ -42,7 +44,7 @@
     height: 100;
     grid-row-start: 3;
     grid-row-end: 4;
-    margin: 50px 10px;
+    margin: 120px 10px;
 }
 
 #noticia4 img{
@@ -55,11 +57,18 @@
     grid-template-rows: 25vh 25vh;
 }
 
-.container p, .container figcaption{
+.container p, figcaption{
     text-align: left;
     color: black;
     font-size: 0.9em;
     text-indent: 0;
     margin: 0;
     width: 550px;
+}
+
+h4{
+    color: #0477BF;
+}
+a{
+    text-decoration: none;
 }
