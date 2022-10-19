@@ -182,3 +182,8 @@ footer h1{
     margin-right: 20px;
     text-decoration: none;
 }
+
+.perfil{
+    border-radius: 40%;
+    width: 250px;
+}

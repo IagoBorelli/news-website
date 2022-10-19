@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="midia/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Fale Conosco</title>
 </head>
@@ -26,16 +27,34 @@
         </nav>
     </header>  
     <main>
-        <div>
-            <img src="" alt="">
+        <div id="form">
             <form action="">
-                <input placeholder="Nome completo" type="text" name="" id="">
-                <input placeholder="E-mail" type="email" name="" id="">
-                <input placeholder="Celular" type="tel" name="" id="">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <button></button>
+                <h2 class="title">Fale Conosco</h2>
+    
+                <label for="username">Nome</label>
+                <div class="input">
+                    <input type="text" name="username" id="username" required>
+                </div>
+    
+                <label for="email">E-mail</label>
+                <div class="input">
+                    <input type="email" name="email" id="email" required>
+                </div>
+                
+                <label for="assunto">Assunto</label>
+                <div class="input">
+                    <input type="text" name="assunto" id="assunto" required>
+                </div>
+
+                <label for="mensagem">Mensagem</label>
+                <div class="input">
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea> 
+                </div>
+    
+                <div id="btn">
+                    <button type="submit">Enviar</button>
+                </div>
             </form>
-        </div>
     </main>
     <footer>
         <div id="logo-footer"> <h1>NerdNews</h1> </div>
