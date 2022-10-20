@@ -68,7 +68,28 @@
 
 h4{
     color: #0477BF;
+    padding-top: 10px;
 }
+
 a{
     text-decoration: none;
+}
+
+/*Estilização das imagens
+
+.zoom{
+    overflow: hidden;
+}
+
+.zoom img{
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transform: all 0.3s;
+    transition: all 0.3s;
+}
+
+.zoom:hover img{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
