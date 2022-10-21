@@ -1,0 +1,131 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#pesquisar{
+    float: right;
+    height: 38px;
+}
+
+header{
+    list-style: none;
+    background-color: #c4170c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    border-bottom: 3px solid #0477BF;
+}
+
+nav{
+    background-color: #8a0101a8;
+}
+
+#menu h1{
+    text-align: center;
+    padding: 20;
+    height: 1.5em;
+    font-family: 'silkscreen', sans-serif;
+    font-size: 2.5em;
+    color: white;
+}
+
+#menu li{
+    display: inline;
+
+}
+
+#menu li a{
+    display: inline-block;
+    font-family: 'silkscreen', sans-serif;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu li a:hover {
+    color: #420000;
+}
+
+main{
+    padding-top: 15vh;
+    background-color: darkgray;
+    height: 90vh;
+}
+
+main{
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+main table{
+    width: 100%;
+}
+h1{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+#table-header{
+    text-align: center;
+}
+#table-header td{
+    background: #c4170c;
+    padding: 5px;
+    font-size: 18px;
+}
+main table td{
+    border: 1px solid black;
+}
+main table tbody tr td{
+    background: white;
+    padding: 4px;
+    font-size: 14px;
+}
+
+#paginacao{
+    margin-top: 10px;
+}
+
+#paginacao ul{
+    display: flex;
+    justify-content: center;
+}
+#paginacao ul{
+    list-style: none;
+}
+#paginacao ul li a{
+    text-decoration: none;
+}
+
+
+footer{
+    background-color: #c4170c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    margin-top: -20px;
+    margin-bottom: 0px;
+}
+
+footer h1{
+    font-family: 'silkscreen', sans-serif;
+    color: white;
+    font-size: 3em;
+}
+
+
+#icones-redes-sociais a{
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.perfil{
+    border-radius: 40%;
+    width: 250px;
+}
