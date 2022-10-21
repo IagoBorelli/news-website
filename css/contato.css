@@ -60,3 +60,18 @@ label{
     background: white;
     color: #420000;
 }
+
+#registro{
+    margin: 50px 0px 0px 0px;
+    text-align: start;
+}
+
+#registro a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.7em;
+    background-color: #c4170c;
+    padding: 5px;
+    border-radius: 50px;
+
+}

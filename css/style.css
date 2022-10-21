@@ -10,8 +10,8 @@
 }
 
 #pesquisar{
-    margin-left: 1188px;
-    
+    float: right;
+    height: 38px;
 }
 
 header{

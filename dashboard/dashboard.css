@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Silkscreen&display=swap');
+
 *{
     margin: 0 auto;
     padding: 0;
@@ -53,7 +55,7 @@ nav{
 }
 
 main{
-    padding-top: 15vh;
+    padding-top: 20vh;
     background-color: darkgray;
     height: 90vh;
 }
@@ -66,18 +68,27 @@ main{
 main table{
     width: 100%;
 }
-h1{
+
+caption{
     font-size: 25px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+    border: 1px solid black;
+    background-color: #c4170c;
+    color: white;
+    font-family: 'silkscreen', sans-serif;
 }
+
 #table-header{
     text-align: center;
+    color: white;
 }
+
 #table-header td{
     background: #c4170c;
     padding: 5px;
     font-size: 18px;
 }
+
 main table td{
     border: 1px solid black;
 }
@@ -100,6 +111,12 @@ main table tbody tr td{
 }
 #paginacao ul li a{
     text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#paginacao a:hover{
+    text-decoration: underline;
 }
 
 
