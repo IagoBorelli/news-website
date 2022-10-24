@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="midia/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/new-style.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Quem Somos</title>
 </head>
 <body>
-    <header id="menu">
-        <h1>NerdNews</h1>
-        <input type="search" placeholder="Pesquisar" name="Busca" id="pesquisar">
-        <nav>
+    <header>
+        <div id="logo">
+            <img src="midia/logo-header.jpg" alt="">
+        </div>
+        <nav id="menu-bar">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="cinema.html">Cinema</a></li>
@@ -23,55 +26,53 @@
                 <li><a href="sobre.html">Quem Somos</a></li>
                 <li><a href="login.html">Login</a></li>
             </ul>
+            <div id="pesquisar">
+                <div id="input-search">
+                    <input type="text">
+                </div>
+                <div id="icon-search">
+                    <i class='bx bx-search'></i>
+                </div>
+            </div>
         </nav>
-    </header>  
+    </header>
     <main>
-        <h1>Quem somos</h1>
-        <br>
-        <p>Somos alunos do sengundo período pela instituição Estácio, do curso análise e desenvolvimento de sistemas.</p>
-
-        <h2>Iago Borelli</h2>
-        <br>
-        <img src="midia/perfil-iago.jpg" alt="foto de perfil de iago" class="perfil">
-        <p>E aí, blz! Meu nome é Iago Borelli, sou estudande de <strong>ADS</strong>, estou no segundo período.</p>
-        <p>Tenho afeição pela área de Front-End e pretendo me especializar nela.</p>
-        <p>Se quiser conferir meus trabalhos, esse é o meu github: <a href="https://github.com/iagoborelli" target="_blank"><strong>Github</strong></a></p>
-        <br>
-        <h2>Fernanda Felicio</h2>
-        <br>
-        <img src="midia/perfil-fernanda.jpeg" alt="foto de perfil de fernanda" class="perfil">
-        <p>Oie! Meu nome é Fernanda Felicio, sou estudande de <strong>SI</strong>, estou no segundo período.</p>
-        <p>Tenho afeição pela área de Banco de dados e a de Redes.</p>
-        <p>Se quiser conferir meus trabalhos, esse é o meu github: <a href="https://github.com/feliciofer" target="_blank"><strong>Github</strong></a></p>
-        <br>
-        <h2>Guilherme Santos</h2>
-        <br>
-        <img src="midia/perfil-guilherme.jpg" alt="foto de perfil de guilherme" class="perfil">
-        <p>Opa! Meu nome é Guilherme Santos, sou estudande de <strong>ADS</strong>, estou no segundo período.</p>
-        <p>Tenho afeição pela área de Back-End e já venho me especializando na área.</p>
-        <p>Se quiser conferir meus trabalhos, esse é o meu github: <a href="https://github.com/guilhermedev98" target="_blank"><strong>Github</strong></a></p>
-
-
-
-
-
-
-
-
+        <div class="container-sobre-nos">
+            <h1>Quem somos</h1>
+            <br>
+            <p>Somos alunos do sengundo período pela instituição Estácio, do curso análise e desenvolvimento de sistemas.</p>
+            <br>
+            <div class="container-perfil">
+                <h2>Iago Borelli</h2>
+                <br>
+                <img src="midia/perfil-iago.jpg" alt="foto de perfil de iago" class="perfil">
+                <p>E aí, blz! Meu nome é Iago Borelli, sou estudande de <strong>ADS</strong>, estou no segundo período.</p>
+                <p>Tenho afeição pela área de Front-End e pretendo me especializar nela.</p>
+                <p>Se quiser conferir meus trabalhos, esse é o meu github: <a href="https://github.com/iagoborelli" target="_blank"><strong>Github</strong></a></p>
+                <br>
+                <h2>Fernanda Felicio</h2>
+                <br>
+                <img src="midia/perfil-fernanda.jpeg" alt="foto de perfil de fernanda" class="perfil">
+                <p>Oie! Meu nome é Fernanda Felicio, sou estudande de <strong>SI</strong>, estou no segundo período.</p>
+                <p>Tenho afeição pela área de Banco de dados e a de Redes.</p>
+                <p>Se quiser conferir meus trabalhos, esse é o meu github: <a href="https://github.com/feliciofer" target="_blank"><strong>Github</strong></a></p>
+                <br>
+                <h2>Guilherme Santos</h2>
+                <br>
+                <img src="midia/perfil-guilherme.jpg" alt="foto de perfil de guilherme" class="perfil">
+                <p>Opa! Meu nome é Guilherme Santos, sou estudande de <strong>ADS</strong>, estou no segundo período.</p>
+                <p>Tenho afeição pela área de Back-End e já venho me especializando na área.</p>
+                <p>Se quiser conferir meus trabalhos, esse é o meu github: <a href="https://github.com/guilhermedev98" target="_blank"><strong>Github</strong></a></p>
+            </div>
+        </div>
         <!--<p>Esste site foi feito para a disciplina de desenvolvimento web, ministrada pelo professor Fausto.</p>-->
     </main>
     <footer>
-        <div id="logo-footer"> <h1>NerdNews</h1> </div>
-        <div id="icones-redes-sociais">
-            <a href="https://www.facebook.com/br.estacio/" target="_blank">
-                <img src="midia/facebook.png">
-            </a>
-            <a href="https://www.instagram.com/estacio_brasil/" target="_blank">
-                <img src="midia/instagram.png">
-            </a>
-            <a href="https://estacio.br/" target="_blank">
-                <img src="midia/world-wide-web.png">
-            </a>
+        <div id="logo-footer"> 
+            <h1>NerdNews</h1> 
+        </div>
+        <div id="bla"> 
+            &copy;Copyright 2000-2022 NerdNews
         </div>
     </footer>
     

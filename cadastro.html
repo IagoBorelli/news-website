@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="midia/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/new-style.css">
     <link rel="stylesheet" href="css/formulario.css">
     <script src="https://kit.fontawesome.com/ca14b9e588.js" crossorigin="anonymous"></script>
     <title>Cadastro</title>
 </head>
 <body>
-    <header id="menu">
-        <nav>
+    <header>
+        <nav id="menu-bar">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="cinema.html">Cinema</a></li>
@@ -23,39 +24,36 @@
                 <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
-    </header>  
-    <div id="form">
-        <form action="">
-            <h2 class="title">Cadastro</h2>
-
-            <label for="username">Nome</label>
-            <div class="input">
-                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                <input type="text" name="username" id="username" required>
-            </div>
-
-            <label for="email">E-mail</label>
-            <div class="input">
-                <i class="far fa-envelope"></i>
-                <input type="email" name="email" id="email" required>
-            </div>
-
-            <label for="password">Senha</label>
-            <div class="input">
-                <i class="fas fa-lock"></i>
-                <input type="password" name="password" id="password" required>
-            </div>
-            <label for="confirm">Confirmar Senha</label>
-            <div class="input">
-                <i class="fas fa-lock"></i>
-                <input type="password" name="confirm" id="confirm" required>
-            </div>
-
-            <div id="btn">
-                <button type="submit">Cadastrar</button>
-            </div>
-        </form>
-
+    </header>
+    <div  class="container-login">
+        <div id="form">
+            <form action="">
+                <h2 class="title">Cadastro</h2>
+                <label for="username">Nome</label>
+                <div class="input">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    <input type="text" name="username" id="username" required>
+                </div>
+                <label for="email">E-mail</label>
+                <div class="input">
+                    <i class="far fa-envelope"></i>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <label for="password">Senha</label>
+                <div class="input">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <label for="confirm">Confirmar Senha</label>
+                <div class="input">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="confirm" id="confirm" required>
+                </div>
+                <div id="btn">
+                    <button type="submit">Cadastrar</button>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>

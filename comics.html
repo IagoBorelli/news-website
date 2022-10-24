@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="midia/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/new-style.css">
     <link rel="stylesheet" href="css/topicos.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Comics - Nerd news</title>
 </head>
 <body>
-    <header id="menu">
-        <h1>NerdNews</h1>
-        <input type="search" placeholder="Pesquisar" name="Busca" id="pesquisar">
-        <nav>
+    <header>
+        <div id="logo">
+            <img src="midia/logo-header.jpg" alt="">
+        </div>
+        <nav id="menu-bar">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="cinema.html">Cinema</a></li>
@@ -24,14 +26,22 @@
                 <li><a href="sobre.html">Quem Somos</a></li>
                 <li><a href="login.html">Login</a></li>
             </ul>
+            <div id="pesquisar">
+                <div id="input-search">
+                    <input type="text">
+                </div>
+                <div id="icon-search">
+                    <i class='bx bx-search'></i>
+                </div>
+            </div>
         </nav>
-    </header>  
+    </header>
     <main>
         <h2>Comics</h2>
         <hr>
-        <div class="container">
+        <div class="container-generos">
 
-            <div id="noticia1">
+            <div class="noticia1">
                 <a href="artigos/comics/artigo1.html">
                     <figure class="zoom">
                             <img src="midia/comics-materia1.jpg" alt="">
@@ -42,7 +52,7 @@
                 </a>
             </div>
 
-            <div id="noticia2">
+            <div class="noticia2">
                 <a href="artigos/comics/artigo2.html">
                     <figure class="zoom">
                         <img src="midia/comics-materia2.jpg" alt="">
@@ -53,7 +63,7 @@
                 </a>
             </div>
 
-            <div id="noticia3">
+            <div class="noticia3">
                 <a href="artigos/comics/artigo3.html">
                     <figure class="zoom">
                         <img src="midia/comics-materia3.jpg" alt="">
@@ -65,7 +75,7 @@
                 </a>
             </div>
 
-            <div id="noticia4">
+            <div class="noticia4">
                 <a href="artigos/comics/artigo4.html">
                     <figure class="zoom">
                         <img src="midia/comics-materia4.jpg" alt="">
@@ -79,17 +89,11 @@
         </div>
     </main>
     <footer>
-        <div id="logo-footer"> <h1>NerdNews</h1> </div>
-        <div id="icones-redes-sociais">
-            <a href="https://www.facebook.com/br.estacio/" target="_blank">
-                <img src="midia/facebook.png">
-            </a>
-            <a href="https://www.instagram.com/estacio_brasil/" target="_blank">
-                <img src="midia/instagram.png">
-            </a>
-            <a href="https://estacio.br/" target="_blank">
-                <img src="midia/world-wide-web.png">
-            </a>
+        <div id="logo-footer"> 
+            <h1>NerdNews</h1> 
+        </div>
+        <div id="bla"> 
+            &copy;Copyright 2000-2022 NerdNews
         </div>
     </footer>
 </body>

@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Silkscreen&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
+body{
+    background: rgba(204, 203, 203, 0.877);
 }
 
-body{
+.container-contato{
     width: 100%;
-    height: 100vh;
-    background: #cececebd
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 #form{
     background: white;
     border-radius: 10px;
-    padding: 100px;
+    padding: 9%;
     width: max-content;
     align-items: center;
     color: #c4170c;
@@ -35,7 +37,15 @@ label{
     border: 0.5px solid black;
     outline: none;
     font-family: sans-serif;
-    font-size: 14pt;
+    font-size: 12pt;
+    text-indent: 3%;
+}
+
+.input textarea{
+    font-size: 12pt;
+    text-indent: 3%;
+    text-align: left;
+    font-family: sans-serif;
 }
 
 #btn button{

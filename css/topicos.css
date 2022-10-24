@@ -1,95 +1,72 @@
-#noticia1{
-    
-    height: 100;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    margin: 20px 50px;
-    
-}
-
-#noticia1 img{
-    width: 500px;
-}
-
-#noticia2{
-    
-    height: 100;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    margin: 20px 10px;
-}
-
-#noticia2 img{
-    width: 500px;
-}
-
-#noticia3{
-    
-    height: 100;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    margin: 120px 50px;
-}
-
-#noticia3 img{
-    width: 500px;
-}
-
-#noticia4{
-    
-    height: 100;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    margin: 120px 10px;
-}
-
-#noticia4 img{
-    width: 500px;
-}
-
-.container{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.container-generos{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 25vh 25vh;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 3%;
+    grid-template-areas: "ntc1 ntc2"
+                         "ntc3 ntc4";
 }
 
-.container p, figcaption{
+.container-generos figure img{
+    width: 100%;
+    height: 100%;
+}
+
+.container-generos figure a{
+    text-decoration: none;
+    color: black;
+}
+
+.noticia1{
+    grid-area: ntc1;
+    margin-right: 2%;
+}
+
+
+.noticia2{
+    grid-area: ntc2;
+    margin-right: 2%;
+
+}
+
+
+.noticia3{
+    grid-area: ntc3;
+    margin-top: 5%;
+    margin-right: 2%;
+
+}
+
+.noticia4{
+    grid-area: ntc4;
+    margin-top: 5%;
+    margin-right: 2%;
+
+}
+
+
+.container-generos p, figcaption{
     text-align: left;
     color: black;
     font-size: 0.9em;
     text-indent: 0;
     margin: 0;
-    width: 550px;
+    width: 90%;
+    font-family: 'open sans';
 }
 
 h4{
     color: #0477BF;
-    padding-top: 10px;
+    font-family: 'open sans';
 }
 
 a{
     text-decoration: none;
 }
 
-/*Estilização das imagens
-
-.zoom{
-    overflow: hidden;
-}
-
-.zoom img{
-    max-width: 100%;
-    -moz-transition: all 0.3s;
-    -webkit-transform: all 0.3s;
-    transition: all 0.3s;
-}
-
-.zoom:hover img{
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+h2{
+    margin-top: 2%;
+    font-size: 24pt;
+    font-family: 'open sans';
 }

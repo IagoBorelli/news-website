@@ -1,0 +1,14 @@
+main{
+    padding-left: 2%;
+}
+
+.container-sobre-nos{
+    padding-top: 3%;
+    width: 100%;
+    height: 100%;
+}
+
+.container-sobre-nos img{
+    border-radius: 100%;
+    width: 15%;
+}

@@ -1,77 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Silkscreen&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header{
-    width: 100%;
-    background-color: #c4170c;
-    position: fixed;
-}
-
-#logo{
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-    font-family: 'silkscreen', sans-serif;
-    color: white;
-}
-#menu-bar{
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    background-color: #8a0101a8;
-    align-items: center;
-}
-
-#menu-bar ul{
-    display: flex;
-    list-style: none;
-}
-
-#menu-bar li a{
-    font-family: 'silkscreen', sans-serif;
-    color: white;
-    text-decoration: none;
-    transition: background .4s;
-    padding: 10px;
-    font-size: 10px;
-}
-
-#menu-bar li a:hover{
-    color: #420000;
-    transition: 0.5s;
-}
-
-#menu-bar #pesquisar{
-    color: white;
-    font-size: 25px;
-    align-self: center;
-    display: flex;
-    height: 100%;
-}
-#menu-bar #pesquisar #input-search input{
-    border: 1px solid darkgray;
-    border-radius: 5px;
-    height: 50%;
-    margin-top: 13px;
-}
-#menu-bar #pesquisar i{
-    margin-top: 13px;
-    padding-left: 10px;
-}
-
-/* main */
-
-main{
-    padding-top: 131px;
-    padding-left: 15%;
-    padding-right: 15%;
-}
+/* Primeiro Bloco */
 
 .container-noticias-destaques{
     display: grid;
@@ -86,6 +13,7 @@ main{
     width: 100%;
     height: 100%;
 }
+
 .container-noticias-destaques .noticia-destaque figure a{
     text-decoration: none;
     color: white;
@@ -97,13 +25,14 @@ main{
 }
 
 .container-noticias-destaques .noticia-destaque .figcaption{
-    font-size: 18px;
+    font-size: 17px;
     width: 100%;
     margin-top: -60px;
     position: relative;
     height: 56px;
     padding: 10px;
-    background: rgba(66, 0, 0, .8);
+    background: #0477bf8a;
+    z-index: 1;
 }
 
 .noticia1{
@@ -123,3 +52,73 @@ main{
 .zoom{
     height: 100%;
 }
+
+/* Segundo Bloco */
+
+.container-topicos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 106%;
+    margin-top: 7%;
+    grid-template-areas: "tpc1 tpc2"
+                         "tpc3 tpc4";
+}
+
+.container-topicos .topicos figure img{
+    width: 100%;
+    height: 100%;
+}
+
+.container-topicos .topicos a{
+    text-decoration: none;
+    color: black;
+}
+
+.t1{
+    grid-area: tpc1;
+    margin-right: 10%;
+}
+
+.t2{
+    grid-area: tpc2;
+    margin-right: 10%;
+}
+
+.t3{
+    grid-area: tpc3;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.t4{
+    grid-area: tpc4;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.container-topicos .sec .materia2 figure img{
+    width: 50%;
+    height: 25%;
+    float: left;
+    margin-right: 2%;
+}
+
+.container-topicos .sec .materia2 a figure h4, h5{
+    font-size: 100%;
+}
+
+.container-topicos .topicos h4{
+    color: #0477BF;
+}
+
+.container-topicos .topicos h5:hover, figcaption:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
