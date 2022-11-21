@@ -24,7 +24,7 @@ header{
 #form{
     background: white;
     border-radius: 10px;
-    padding: 5%;
+    padding: 7%;
     width: min-content;
     align-items: center;
     color: #c4170c;
@@ -92,4 +92,12 @@ header{
 
 #ancora {
     color: #9e150b;
+}
+
+.radio {
+    display: flex;
+}
+
+.radio input {
+    margin-left: 5%;
 }

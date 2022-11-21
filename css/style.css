@@ -2,89 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Silkscreen&display=swap');
 
 
-*{
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-}
-
-#pesquisar{
-    float: right;
-    height: 38px;
-}
-
-header{
-    list-style: none;
-    background-color: #c4170c;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 0;
-    border-bottom: 3px solid #0477BF;
-}
-
-nav{
-    background-color: #8a0101a8;
-}
-
-#menu h1{
-    text-align: center;
-    padding: 20;
-    height: 1.5em;
-    font-family: 'silkscreen', sans-serif;
-    font-size: 2.5em;
-    color: white;
-}
-
-#menu li{
-    display: inline;
-
-}
-
-#menu li a{
-    display: inline-block;
-    font-family: 'silkscreen', sans-serif;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    transition: background .4s;
-}
-
-#menu li a:hover{
-    color: #420000;
-    transition: 0.5s;
-}
-
-main{
-    margin-top: 145px;
-    width: 1250px;
-    margin-bottom: 15vh;
-}
-
-#principal-1{
-    display: grid;
-}
-
-.principal-1 img {
-    width: 650px;
-}
-
-
-
-/* estilização página de artigos */
-
 p{
     text-align: justify;
     text-indent: 15px;
+    font-size: 12pt;
+    font-family: 'open sans';
 }
 
 h2{
     margin-top: 10px;
 }
 
-#artigo-title{
+.artigo-title{
     text-align: center;
     font-weight: bold;
     padding-top: 1em;
@@ -94,11 +23,16 @@ h2{
 #article-informations{
     display: flex;
     justify-content: center;
-    font-size: .9em;
+    font-size: 1.2em;
     padding-bottom: 1em;
     margin-bottom: 20px;
     color: darkgray;
 }
+
+#article-informations span {
+    margin: 0 3%;
+}
+
 #article-informations a{
     color: darkgray;
     text-decoration: none;
@@ -110,6 +44,7 @@ h2{
 #article-image{
     text-align: center;
 }
+
 #article-text{
     padding-top: 2em;
     padding-bottom: 2em;
@@ -158,32 +93,7 @@ h2{
     font-size: .9em;
     justify-items: center;
 }
-
-/*Estilização do Footer*/
-
-footer{
-    background-color: #c4170c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 15vh;
-    margin-top: -20px;
-    margin-bottom: 0px;
-}
-
-footer h1{
-    font-family: 'silkscreen', sans-serif;
-    color: white;
-    font-size: 3em;
-}
-
-
-#icones-redes-sociais a{
-    margin-right: 20px;
-    text-decoration: none;
-}
-
-.perfil{
-    border-radius: 100%;
-    width: 250px;
+.article-image img {
+    width: 150vh;
+    text-align: center;
 }

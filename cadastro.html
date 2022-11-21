@@ -34,10 +34,30 @@
                     <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                     <input type="text" name="username" id="username" required>
                 </div>
+                <label for="usuario">Nome de Usuário</label>
+                <div class="input">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    <input type="text" name="usuario" id="usuario" required>
+                </div>
+                <label for="cpf">CPF</label>
+                <div class="input">
+                    <i class="fa fa-id-card-o" aria-hidden="true"></i>
+                    <input type="text" name="username" id="username" required>
+                </div>
                 <label for="email">E-mail</label>
                 <div class="input">
                     <i class="far fa-envelope"></i>
                     <input type="email" name="email" id="email" required>
+                </div>
+                <label for="endereco">Endereço</label>
+                <div class="input">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <input type="text" name="endereco" id="endereco" required>
+                </div>
+                <label for="telefone">Telefone</label>
+                <div class="input">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <input type="tel" name="telefone" id="telefone" required>
                 </div>
                 <label for="password">Senha</label>
                 <div class="input">
@@ -47,8 +67,19 @@
                 <label for="confirm">Confirmar Senha</label>
                 <div class="input">
                     <i class="fas fa-lock"></i>
-                    <input type="password" name="confirm" id="confirm" required>
+                    <input type="password" name="confirm" id="confirm" required >
                 </div>
+                <form action="">
+                    <label for="perfil">Perfil</label>
+                    <div class="radio">
+                        <input type="radio" name="usuario" id="usuario" value="usuario" checked>
+                        <label for="usuario">Usuário</label>
+                        <input type="radio" name="colunista" id="colunista" value="colunista">
+                        <label for="adm">Colunista</label>
+                        <input type="radio" name="adm" id="adm" value="adm">
+                        <label for="adm">ADM</label>
+                    </div>
+                </form>
                 <div id="btn">
                     <button type="submit">Cadastrar</button>
                 </div>

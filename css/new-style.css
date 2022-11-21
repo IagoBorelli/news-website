@@ -36,9 +36,28 @@ header{
     align-items: center;
 }
 
+
 #menu-bar ul{
     display: flex;
     list-style: none;
+}
+
+#menu-bar ul ul {
+    display: none;
+    position: absolute;
+}
+
+#menu-bar ul li:hover ul {
+    display: block;
+    background-color: #8a0101de; 
+}
+
+#menu-bar ul ul {
+    width: 150px;
+}
+
+#menu-bar ul ul li a {
+    display: block;
 }
 
 #menu-bar li a{
