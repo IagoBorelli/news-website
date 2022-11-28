@@ -130,3 +130,37 @@ header{
     font-size: 14pt;
     font-family: 'sans-serif';
 }
+
+main table{
+    width: 100%;
+    margin-top: 10%;
+}
+
+caption{
+    font-size: 25px;
+    margin-bottom: 0px;
+    border: 1px solid black;
+    background-color: #c4170c;
+    color: white;
+    font-family: 'silkscreen', sans-serif;
+}
+
+#table-header{
+    text-align: center;
+    color: white;
+}
+
+#table-header td{
+    background: #c4170c;
+    padding: 5px;
+    font-size: 18px;
+}
+
+main table td{
+    border: 1px solid black;
+}
+main table tbody tr td{
+    background: white;
+    padding: 4px;
+    font-size: 14px;
+}

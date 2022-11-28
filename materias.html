@@ -25,75 +25,111 @@
             </ul>
         </nav>
     </header>
-    <div  class="container-materia">
-        <div id="form">
-            <form action="">
-                <h2 class="title">Cadastro de Matérias</h2>
-                <label for="titulo">Título da matéria</label>
-                <div class="input">
-                    <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                    <input type="text" name="titulo" id="titulo" required>
-                </div>
-                <label for="autor">Autor</label>
-                <div class="input">
-                    <i class="fa fa-user-circle" aria-hidden="true"></i>
-                    <input type="text" name="autor" id="autor" required>
-                </div>
-                <label for="password">Senha do usuário</label> <br>
-                <label for="password" id="req">(6 characters minimum)</label>
-                <div class="input">
-                    <i class="fa fa-lock" aria-hidden="true"></i>
-                    <input type="password" name="password" id="password" required minlength="6" maxlength="10">
-                </div>
-                <label for="confirm">Comfirmação de senha</label>
-                <div class="input">
-                    <i class="fa fa-lock" aria-hidden="true"></i>
-                    <input type="password" name="confirm" id="confirm" required minlength="6" maxlength="10">
-                </div>
-                <label for="email">Email</label>
-                <div class="input">
-                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                    <input type="text" name="email" id="email" required>
-                </div>
-                <label for="data">Data</label>
-                <div class="input">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                    <input type="date" name="data" id="data">
-                </div>
-                <label for="fonte">Fonte</label>
-                <div class="input">
-                    <i class="fa fa-at" aria-hidden="true"></i>
-                    <input type="url" name="fonte" id="fonte">
-                </div>
-                <label for="tema">Tema</label>
-                <div class="input">
-                    <select name="temas" id="temas">
-                        <option value="empty"></option>
-                        <option value="valor1">Cinema</option>
-                        <option value="valor2">Games</option>
-                        <option value="valor3">Comics</option>
-                        <option value="valor4">Tech</option>
-                    </select>
-                </div>
-                <label for="assunto">Matéria</label>
-                <div class="input">
-                    <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
-                </div>
-                <label for="radio">Vizualização</label>
-                <div class="radio">
-                    <input type="radio" name="publica" id="publica">
-                    <label for="publica">Pública</label>
-                    <input type="radio" name="privada" id="privada">
-                    <label for="privada">Privada</label>
-                </div>
-                
+    <main>
+        <div  class="container-materia">
+            <div id="form">
+                <form action="">
+                    <h2 class="title">Cadastro de Matérias</h2>
+                    <label for="titulo">Título da matéria</label>
+                    <div class="input">
+                        <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                        <input type="text" name="titulo" id="titulo" required>
+                    </div>
+                    <label for="autor">Autor</label>
+                    <div class="input">
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        <input type="text" name="autor" id="autor" required>
+                    </div>
+                    <label for="password">Senha do usuário</label> <br>
+                    <label for="password" id="req">(6 characters minimum)</label>
+                    <div class="input">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input type="password" name="password" id="password" required minlength="6" maxlength="10">
+                    </div>
+                    <label for="confirm">Comfirmação de senha</label>
+                    <div class="input">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input type="password" name="confirm" id="confirm" required minlength="6" maxlength="10">
+                    </div>
+                    <label for="email">Email</label>
+                    <div class="input">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <input type="text" name="email" id="email" required>
+                    </div>
+                    <label for="data">Data</label>
+                    <div class="input">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <input type="date" name="data" id="data">
+                    </div>
+                    <label for="fonte">Fonte</label>
+                    <div class="input">
+                        <i class="fa fa-at" aria-hidden="true"></i>
+                        <input type="url" name="fonte" id="fonte">
+                    </div>
+                    <label for="tema">Tema</label>
+                    <div class="input">
+                        <select name="temas" id="temas">
+                            <option value="empty"></option>
+                            <option value="valor1">Cinema</option>
+                            <option value="valor2">Games</option>
+                            <option value="valor3">Comics</option>
+                            <option value="valor4">Tech</option>
+                        </select>
+                    </div>
+                    <label for="assunto">Matéria</label>
+                    <div class="input">
+                        <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
+                    </div>
+                    <label for="radio">Vizualização</label>
+                    <div class="radio">
+                        <input type="radio" name="publica" id="publica">
+                        <label for="publica">Free</label>
+                        <input type="radio" name="privada" id="privada">
+                        <label for="privada">Premium</label>
+                    </div>
+        
+                    </form>
+                    <div class="btn">
+                        <button type="submit" id="save">Salvar</button>
+                        <button type="reset" id="clear">limpar</button>
+                    </div>
                 </form>
-                <div class="btn">
-                    <button type="submit" id="save">Salvar</button>
-                    <button type="submit" id="clear">limpar</button>
+                <div class="table">
+                    <table>
+                        <caption>Registro de matérias</caption>
+                        <thead>
+                            <tr id="table-header">
+                                <td>Título</td>
+                                <td>Autor</td>
+                                <td>Tema</td>
+                                <td>Matéria</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+        
+                            <tr>
+                                <td>Sony lança PS5</td>
+                                <td>Guilherme Santos</td>
+                                <td>Games</td>
+                                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. N</td>
+                            </tr>
+                            <tr>
+                                <td>Netflix lança wandinha</td>
+                                <td>Iago borelli Gomes</td>
+                                <td>cinema</td>
+                                <td>Finalmente a netflix vai lançar uma série descente</td>
+                            </tr>
+                            <tr>
+                                <td>Finalmente God of War lançou</td>
+                                <td>Fernanda Felício</td>
+                                <td>Games</td>
+                                <td>Lorem, ipsum dolor Lorem ipsum dolor sit amet consectetur adipi</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </form>
+            </div>
         </div>
-    </div>
+    </main>
 </body>
 </html>
