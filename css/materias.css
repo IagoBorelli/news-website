@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Silkscreen&display=swap');
+
+body{
+    font-family: 'silkscreen', sans-serif;
+    background: #cececebd
+}
+
+header{
+    list-style: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+}
+
+.container-materia{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 2%;
+}
+
+#form{
+    background: white;
+    border-radius: 10px;
+    padding: 7%;
+    width: min-content;
+    align-items: center;
+    color: #c4170c;
+}
+
+.title{
+    font-size: 2em;
+    margin-bottom: 10%;
+    margin-top: -30px;
+    text-align: center;
+}
+
+.input{
+    min-width: 280px;
+    border-radius: 22px;
+    border: 2px solid rgb(169, 169, 169);
+    padding: 5px;
+    margin: 0px 0px 12px -5px;
+}
+
+.input i{
+    font-size: 1.2em;
+    padding: 5px;
+    background: -webkit-linear-gradient(-45deg, #c4170c, #ff2011, rgb(92, 3, 3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input input{
+    width: 80%;
+    border: none;
+    outline: none;
+    font-family: 'silkscreen', sans-serif;
+    color: #8a0b0b;
+    transform: translateY(-10%);
+    font-size: 11pt;
+}
+
+.btn{
+    margin-top: 10%;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 0;
+    display: flex;
+}
+
+.btn button{
+    font-family: 'silkscreen', sans-serif;
+    background: linear-gradient(-45deg, #f32112, #ff2011, rgb(92, 3, 3));
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 3%;
+}
+
+.btn button:hover{
+    background: linear-gradient(-45deg, #e9281a, #9e150b, rgb(71, 20, 20));
+}
+
+.btn button:active{
+    background: white;
+    color: #420000;
+}
+
+
+
+.radio {
+    display: flex;
+}
+
+.radio input {
+    margin-left: 5%;
+}
+
+#req {
+    font-size: 10pt;
+}
+
+.input select {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 12pt;
+    color: #c4170c;
+    font-weight: bold;
+}
+
+.input select option {
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+.input textarea {
+    outline: none;
+    border: none;
+    text-indent: 10pt;
+    font-size: 14pt;
+    font-family: 'sans-serif';
+}
