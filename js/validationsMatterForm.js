@@ -84,5 +84,4 @@ function saveData(titulo, autor, email, data, fonte, tema, materia, visualizacao
             <td>${visualizacao}</td>
         </tr>
     `;
-    tabela.appendChild(linha);
 }
