@@ -49,7 +49,7 @@
                     <label for="password">Senha do usuário</label> <br>
                     <div class="input">
                         <i class="fa fa-lock" aria-hidden="true"></i>
-                        <input type="password" name="senha" id="senha" required minlength="6" maxlength="10">
+                        <input type="password" name="senha" id="senha" required minlength="6" maxlength="10" required>
                     </div>
                     <div class="erro" id="errosenha"></div>
 
@@ -57,7 +57,7 @@
                     <div class="input">
                         <i class="fa fa-lock" aria-hidden="true"></i>
                         <input type="password" name="confirmacaoDeSenha" id="confirmacaoDeSenha" required minlength="6"
-                            maxlength="10">
+                            maxlength="10" required>
                     </div>
                     <div class="erro" id="erroconfirmacaoDeSenha"></div>
                     <label for="email">Email</label>
@@ -67,82 +67,76 @@
                     </div>
                     <div class="erro" id="erroemail"></div>
 
-                    <label for="data">Data</label>
+                    <label for="data">Data De Publicação</label>
                     <div class="input">
                         <i class="fa fa-calendar" aria-hidden="true"></i>
-                        <input type="date" name="data" id="data">
+                        <input type="date" name="data" id="data" style="width: 95%;" required>
                     </div>
                     <div class="erro" id="errodata"></div>
 
                     <label for="fonte">Fonte</label>
                     <div class="input">
                         <i class="fa fa-at" aria-hidden="true"></i>
-                        <input type="url" name="fonte" id="fonte">
+                        <input type="url" name="fonte" id="fonte" required>
                     </div>
                     <div class="erro" id="errofonte"></div>
 
                     <label for="tema">Tema</label>
                     <div class="input">
-                        <select name="tema" id="tema">
+                        <select name="tema" id="tema" style="background-color: white;">
                             <option value="empty"></option>
-                            <option value="valor1">Cinema</option>
-                            <option value="valor2">Games</option>
-                            <option value="valor3">Comics</option>
-                            <option value="valor4">Tech</option>
+                            <option value="Cinema">Cinema</option>
+                            <option value="Games">Games</option>
+                            <option value="Comics">Comics</option>
+                            <option value="Tech">Tech</option>
                         </select>
                     </div>
                     <div class="erro" id="errotema"></div>
 
                     <label for="assunto">Matéria</label>
                     <div class="input">
-                        <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
+                        <textarea name="assunto" id="assunto" style="width: 100%;"></textarea>
                     </div>
                     <div class="erro" id="erroassunto"></div>
 
                     <label for="radio">Vizualização</label>
                     <div class="radio">
-                        <input type="radio" name="vizualizacao" id="visualizacaopublica">
+                        <input type="radio" name="vizualizacao" value="Free" id="visualizacaopublica">
                         <label for="publica">Free</label>
-                        <input type="radio" name="vizualizacao" id="visualizacaoprivada">
+                        <input type="radio" name="vizualizacao" value="Premium" id="visualizacaoprivada">
                         <label for="privada">Premium</label>
                     </div>
-                    <div class="erro" id="errovisualizacao"></div>
-                </form>
-                <div class="btn">
-                    <button type="submit" id="btnSaveMatter">Salvar</button>
-                    <button type="reset" id="clear">limpar</button>
-                </div>
+                    <div class="erro" id="errovisualizacao" style="margin-top: 1%;"></div>
+                    <div class="btn">
+                        <button type="submit" id="btnSaveMatter">Salvar</button>
+                        <button type="reset" id="clear">limpar</button>
+                    </div>
                 </form>
                 <div class="table">
-                    <table>
+                    <table id="tabelaMaterias">
                         <caption>Registro de matérias</caption>
                         <thead>
                             <tr id="table-header">
                                 <td>Título</td>
                                 <td>Autor</td>
+                                <td>E-Mail</td>
+                                <td>Data De Publicação</td>
+                                <td>Fonte</td>
                                 <td>Tema</td>
                                 <td>Matéria</td>
+                                <td>Visualização</td>
                             </tr>
                         </thead>
                         <tbody>
-
-                            <tr>
+                            <tr class="tableRow">
                                 <td>Sony lança PS5</td>
                                 <td>Guilherme Santos</td>
+                                <td>guilherme@gmail.com</td>
+                                <td>29/11/2022</td>
+                                <td>www.google.com.br</td>
                                 <td>Games</td>
                                 <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. N</td>
-                            </tr>
-                            <tr>
-                                <td>Netflix lança wandinha</td>
-                                <td>Iago borelli Gomes</td>
-                                <td>cinema</td>
-                                <td>Finalmente a netflix vai lançar uma série descente</td>
-                            </tr>
-                            <tr>
-                                <td>Finalmente God of War lançou</td>
-                                <td>Fernanda Felício</td>
-                                <td>Games</td>
-                                <td>Lorem, ipsum dolor Lorem ipsum dolor sit amet consectetur adipi</td>
+                                <td>Free</td>
                             </tr>
                         </tbody>
                     </table>
@@ -150,7 +144,8 @@
             </div>
         </div>
     </main>
-    <script src="./js/validationsMatterForm..js"></script>
+    <script src="./js/validationsMatterForm.js"></script>
+
 
 </body>
 

@@ -2,6 +2,9 @@ var countErrors = 0;
 document.getElementById("btnSaveUser").addEventListener("click", (e) => {
     // Função Para Prevenir a Submição do Form
     e.preventDefault()
+    document.querySelectorAll('.erro').forEach(div => {
+        div.style.display = 'none';
+    });
 
     // Validações Do Nome Completo
     const nome = document.getElementById("nome")
@@ -74,7 +77,6 @@ function validarCPF(cpf) {
 }
 
 function mostrarErro(campo, mensagem){
-    console.log(mensagem)
     const field = document.getElementById(`erro${campo}`)
     field.style.display = 'block'
     field.innerHTML = mensagem
