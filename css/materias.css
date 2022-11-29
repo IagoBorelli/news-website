@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Silkscreen&display=swap');
 
-body{
+body {
     font-family: 'silkscreen', sans-serif;
     background: #cececebd
 }
 
-header{
+header {
     list-style: none;
     top: 0;
     left: 0;
@@ -13,7 +13,7 @@ header{
     padding: 0;
 }
 
-.container-materia{
+.container-materia {
     width: 100%;
     display: flex;
     align-items: center;
@@ -22,7 +22,7 @@ header{
     margin-bottom: 2%;
 }
 
-#form{
+#form {
     background: white;
     border-radius: 10px;
     padding: 7%;
@@ -31,14 +31,14 @@ header{
     color: #c4170c;
 }
 
-.title{
+.title {
     font-size: 2em;
     margin-bottom: 10%;
     margin-top: -30px;
     text-align: center;
 }
 
-.input{
+.input {
     min-width: 280px;
     border-radius: 22px;
     border: 2px solid rgb(169, 169, 169);
@@ -46,7 +46,7 @@ header{
     margin: 0px 0px 12px -5px;
 }
 
-.input i{
+.input i {
     font-size: 1.2em;
     padding: 5px;
     background: -webkit-linear-gradient(-45deg, #c4170c, #ff2011, rgb(92, 3, 3));
@@ -54,7 +54,7 @@ header{
     -webkit-text-fill-color: transparent;
 }
 
-.input input{
+.input input {
     width: 80%;
     border: none;
     outline: none;
@@ -64,7 +64,7 @@ header{
     font-size: 11pt;
 }
 
-.btn{
+.btn {
     margin-top: 10%;
     width: 100%;
     text-align: right;
@@ -72,7 +72,7 @@ header{
     display: flex;
 }
 
-.btn button{
+.btn button {
     font-family: 'silkscreen', sans-serif;
     background: linear-gradient(-45deg, #f32112, #ff2011, rgb(92, 3, 3));
     width: 100%;
@@ -86,11 +86,11 @@ header{
     margin-right: 3%;
 }
 
-.btn button:hover{
+.btn button:hover {
     background: linear-gradient(-45deg, #e9281a, #9e150b, rgb(71, 20, 20));
 }
 
-.btn button:active{
+.btn button:active {
     background: white;
     color: #420000;
 }
@@ -131,12 +131,12 @@ header{
     font-family: 'sans-serif';
 }
 
-main table{
+main table {
     width: 100%;
     margin-top: 10%;
 }
 
-caption{
+caption {
     font-size: 25px;
     margin-bottom: 0px;
     border: 1px solid black;
@@ -145,22 +145,31 @@ caption{
     font-family: 'silkscreen', sans-serif;
 }
 
-#table-header{
+#table-header {
     text-align: center;
     color: white;
 }
 
-#table-header td{
+#table-header td {
     background: #c4170c;
     padding: 5px;
     font-size: 18px;
 }
 
-main table td{
+main table td {
     border: 1px solid black;
 }
-main table tbody tr td{
+
+main table tbody tr td {
     background: white;
     padding: 4px;
     font-size: 14px;
+}
+
+.erro {
+    margin-top: -1%;
+    margin-bottom: 2%;
+    color: #0477BF;
+    font-weight: bold;
+    font-size: 12px;
 }

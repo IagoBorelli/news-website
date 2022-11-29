@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Silkscreen&display=swap');
 
-body{
+body {
     font-family: 'silkscreen', sans-serif;
     background: #cececebd
 }
 
-header{
+header {
     list-style: none;
     top: 0;
     left: 0;
@@ -13,7 +13,7 @@ header{
     padding: 0;
 }
 
-.container-login{
+.container-login {
     width: 100%;
     display: flex;
     align-items: center;
@@ -21,7 +21,7 @@ header{
     margin-top: 70px;
 }
 
-#form{
+#form {
     background: white;
     border-radius: 10px;
     padding: 7%;
@@ -30,12 +30,12 @@ header{
     color: #c4170c;
 }
 
-.title{
+.title {
     font-size: 2em;
     margin-bottom: 10%;
 }
 
-.input{
+.input {
     min-width: 280px;
     border-radius: 22px;
     border: 2px solid darkgray;
@@ -43,7 +43,7 @@ header{
     margin: 0px 0px 12px -5px;
 }
 
-.input i{
+.input i {
     font-size: 1.2em;
     padding: 5px;
     background: -webkit-linear-gradient(-45deg, #c4170c, #ff2011, rgb(92, 3, 3));
@@ -51,7 +51,7 @@ header{
     -webkit-text-fill-color: transparent;
 }
 
-.input input{
+.input input {
     width: 80%;
     border: none;
     outline: none;
@@ -61,14 +61,14 @@ header{
     font-size: 11pt;
 }
 
-#btn{
+#btn {
     margin-top: 10%;
     width: 100%;
     text-align: center;
     margin-bottom: 10%;
 }
 
-#btn button{
+#btn button {
     font-family: 'silkscreen', sans-serif;
     background: linear-gradient(-45deg, #f32112, #ff2011, rgb(92, 3, 3));
     width: 100%;
@@ -81,11 +81,11 @@ header{
     cursor: pointer;
 }
 
-#btn button:hover{
+#btn button:hover {
     background: linear-gradient(-45deg, #e9281a, #9e150b, rgb(71, 20, 20));
 }
 
-#btn button:active{
+#btn button:active {
     background: white;
     color: #420000;
 }
@@ -100,4 +100,12 @@ header{
 
 .radio input {
     margin-left: 5%;
+}
+
+.erro {
+    margin-top: -1%;
+    margin-bottom: 2%;
+    color: #0477BF;
+    font-weight: bold;
+    font-size: 12px;
 }

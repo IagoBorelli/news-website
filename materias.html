@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <script src="https://kit.fontawesome.com/ca14b9e588.js" crossorigin="anonymous"></script>
     <title>Cadastro</title>
 </head>
+
 <body>
     <header>
         <nav id="menu-bar">
@@ -26,49 +28,62 @@
         </nav>
     </header>
     <main>
-        <div  class="container-materia">
+        <div class="container-materia">
             <div id="form">
-                <form action="">
+                <form id="formMatter">
                     <h2 class="title">Cadastro de Matérias</h2>
                     <label for="titulo">Título da matéria</label>
                     <div class="input">
                         <i class="fa fa-newspaper-o" aria-hidden="true"></i>
                         <input type="text" name="titulo" id="titulo" required>
                     </div>
+                    <div class="erro" id="errotitulo"></div>
+
                     <label for="autor">Autor</label>
                     <div class="input">
                         <i class="fa fa-user-circle" aria-hidden="true"></i>
                         <input type="text" name="autor" id="autor" required>
                     </div>
+                    <div class="erro" id="erroautor"></div>
+
                     <label for="password">Senha do usuário</label> <br>
-                    <label for="password" id="req">(6 characters minimum)</label>
                     <div class="input">
                         <i class="fa fa-lock" aria-hidden="true"></i>
-                        <input type="password" name="password" id="password" required minlength="6" maxlength="10">
+                        <input type="password" name="senha" id="senha" required minlength="6" maxlength="10">
                     </div>
+                    <div class="erro" id="errosenha"></div>
+
                     <label for="confirm">Comfirmação de senha</label>
                     <div class="input">
                         <i class="fa fa-lock" aria-hidden="true"></i>
-                        <input type="password" name="confirm" id="confirm" required minlength="6" maxlength="10">
+                        <input type="password" name="confirmacaoDeSenha" id="confirmacaoDeSenha" required minlength="6"
+                            maxlength="10">
                     </div>
+                    <div class="erro" id="erroconfirmacaoDeSenha"></div>
                     <label for="email">Email</label>
                     <div class="input">
                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
                         <input type="text" name="email" id="email" required>
                     </div>
+                    <div class="erro" id="erroemail"></div>
+
                     <label for="data">Data</label>
                     <div class="input">
                         <i class="fa fa-calendar" aria-hidden="true"></i>
                         <input type="date" name="data" id="data">
                     </div>
+                    <div class="erro" id="errodata"></div>
+
                     <label for="fonte">Fonte</label>
                     <div class="input">
                         <i class="fa fa-at" aria-hidden="true"></i>
                         <input type="url" name="fonte" id="fonte">
                     </div>
+                    <div class="erro" id="errofonte"></div>
+
                     <label for="tema">Tema</label>
                     <div class="input">
-                        <select name="temas" id="temas">
+                        <select name="tema" id="tema">
                             <option value="empty"></option>
                             <option value="valor1">Cinema</option>
                             <option value="valor2">Games</option>
@@ -76,23 +91,27 @@
                             <option value="valor4">Tech</option>
                         </select>
                     </div>
+                    <div class="erro" id="errotema"></div>
+
                     <label for="assunto">Matéria</label>
                     <div class="input">
                         <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
                     </div>
+                    <div class="erro" id="erroassunto"></div>
+
                     <label for="radio">Vizualização</label>
                     <div class="radio">
-                        <input type="radio" name="publica" id="publica">
+                        <input type="radio" name="vizualizacao" id="vizualizacaoPublica">
                         <label for="publica">Free</label>
-                        <input type="radio" name="privada" id="privada">
+                        <input type="radio" name="vizualizacao" id="vizualizacaoPrivada">
                         <label for="privada">Premium</label>
                     </div>
-        
-                    </form>
-                    <div class="btn">
-                        <button type="submit" id="save">Salvar</button>
-                        <button type="reset" id="clear">limpar</button>
-                    </div>
+                    <div class="erro" id="errovizualizacao"></div>
+                </form>
+                <div class="btn">
+                    <button type="submit" id="btnSaveMatter">Salvar</button>
+                    <button type="reset" id="clear">limpar</button>
+                </div>
                 </form>
                 <div class="table">
                     <table>
@@ -106,7 +125,7 @@
                             </tr>
                         </thead>
                         <tbody>
-        
+
                             <tr>
                                 <td>Sony lança PS5</td>
                                 <td>Guilherme Santos</td>
@@ -131,5 +150,8 @@
             </div>
         </div>
     </main>
+    <script src="./js/validationsMatterForm..js"></script>
+
 </body>
+
 </html>
