@@ -38,7 +38,6 @@ document.getElementById("btnSaveMatter").addEventListener("click", (e) => {
     const visualizacaoprivada = document.getElementById("visualizacaoprivada")
     if(visualizacaopublica.checked == false && visualizacaoprivada.checked == false) mostrarErro('visualizacao', "Selecione Um Tipo de Visualização")
 
-    console.log(countErrors)
     if(countErrors == 0 ){
         const errorDivs = document.querySelectorAll('.erro')
         errorDivs.forEach(div => {
